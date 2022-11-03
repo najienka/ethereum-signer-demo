@@ -1,13 +1,27 @@
-# Sample Hardhat Project
+# Ethereum raw transaction signing and broadcasting
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This Hardhat project demonstrates the signing and broadcasting of raw ethereum transactions using newly generated wallets (public and private key pair). It comes with a sample ERC20 token standard smart contract, unit tests for two raw transaction types:
+* simple ether transfer
+* smart contract transaction
 
-Try running some of the following tasks:
+
+## Setup
+
+No environment variables are required.
+
+Install the project dependencies:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i
 ```
+
+
+## Usage
+
+Run the unit tests:
+
+```shell
+npx hardhat test
+```
+
+Hardhat docs can be accessed [here](https://hardhat.org/docs).
