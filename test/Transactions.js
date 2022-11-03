@@ -104,8 +104,6 @@ describe("Sign and Broadcast Raw Transactions", function () {
         it("Should create a new wallet (public+private key pair) and send erc20 tokens from it using ERC20 token smart contract to a recipient address", async function () {
             const { erc20, owner, otherAccount } = await loadFixture(deployERC20Mock);
 
-            let ownerBalance = await erc20.balanceOf(owner.address);
-
             // https://docs.ethers.io/v5/api/signer/#Signer
             // Create a wallet instance from a mnemonic...
             const mnemonic = "announce room limb pattern dry unit scale effort smooth jazz weasel alcohol"
@@ -164,7 +162,7 @@ describe("Sign and Broadcast Raw Transactions", function () {
                 "function decimals() view returns (uint8)",
                 "function symbol() view returns (string)",
 
-                // Authenticated Functions
+                // Non Read-Only Functions
                 "function transfer(address to, uint amount) returns (bool)",
 
                 // Events
