@@ -53,7 +53,7 @@ describe("Sign and Broadcast Raw Transactions", function () {
             const privateKey = walletMnemonic.privateKey
             // '0x1da6847600b0ee25e9ad9a52abbd786dd2502fa4005dd5af9310b7cc7a3b25db'
             const publicKey = walletMnemonic.publicKey
-            // '0x04b9e72dfd423bcf95b3801ac93f4392be5ff22143f9980e
+            // '0x04b9e72dfd423bcf95b3801ac93f4392be5ff22143f9980eb78b3a860c4843bfd04829ae61cdba4b3b1978ac5fc64f5cc2f4350e35a108a9c9a92a81200a60cd64'
 
             // send ETH to the created wallet address
             // Ether amount to send

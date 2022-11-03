@@ -41,17 +41,17 @@ describe("Sign and Broadcast Raw Transactions", function () {
 
             // The address as a Promise per the Signer API
             let walletAddress = await walletMnemonic.getAddress();
-            // '0x71CB05EE1b1F506fF321Da3dac38f25c0c9ce6E1'
+            // '0xB9f01460e3a696f6e90721FF528D30Eeadfcea47'
 
             // A Wallet address is also available synchronously
             walletAddress = walletMnemonic.address;
-            // '0x71CB05EE1b1F506fF321Da3dac38f25c0c9ce6E1'
+            // '0xB9f01460e3a696f6e90721FF528D30Eeadfcea47'
 
             // The internal cryptographic components
             const privateKey = walletMnemonic.privateKey
-            // '0x1da6847600b0ee25e9ad9a52abbd786dd2502fa4005dd5af9310b7cc7a3b25db'
+            // '0xf5d641b87e1c2e6a98171553ddba966603b624537789a1103bc00f71c3a0f886'
             const publicKey = walletMnemonic.publicKey
-            // '0x04b9e72dfd423bcf95b3801ac93f4392be5ff22143f9980e
+            // '0x04413b4e93550f7ec253b3c018285c784178dd1918a1fbe6b408a9920b5fc7739ea6d60f06c9a25988a624f7526b9eeb207b475306c04356792b582dc18816b430'
 
             // send ETH to the created wallet address
             // Ether amount to send
